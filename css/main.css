@@ -2536,3 +2536,48 @@ color:#C43728;
 font-family: 'Poppins';
 font-weight:600;
 }
+.align-left{
+    text-align: left;
+}
+/* Style for the dropdown menu */
+#site-header-menu #site-navigation .menu ul ul {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    top: 100%; /* Position submenu below the parent menu */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding: 10px 0;
+  }
+  
+  /* Show submenu on hover */
+  #site-header-menu #site-navigation .menu ul li:hover > ul {
+    display: block; /* Show submenu */
+  }
+  
+  /* Style for submenu items */
+  #site-header-menu #site-navigation .menu ul ul li {
+    position: relative;
+  }
+  
+  #site-header-menu #site-navigation .menu ul ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  #site-header-menu #site-navigation .menu ul ul li a:hover {
+    background-color: #f5f5f5;
+    color: #ff5e14;
+  }
+  
+  /* Style for nested submenus */
+  #site-header-menu #site-navigation .menu ul ul ul {
+    top: 0;
+    left: 100%; /* Position nested submenu to the right of the parent */
+  }
